@@ -1,0 +1,208 @@
+@import "animations.scss";
+body {
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+  height: 2000px;
+}
+
+#header {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(../images/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: 10% 100%;
+
+  .bubble {
+    position: absolute;
+    top: -50px;
+    left: -400px;
+    .img-bubble {
+      max-width: 1000px;
+    }
+  }
+
+  .box-notification {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .notification {
+      max-width: 375px;
+    }
+  }
+
+  h1 {
+    color: #a467a1;
+    font-size: 54px;
+    font-weight: bold;
+  }
+  p {
+    color: #707070;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1600px) {
+  #header {
+    background-size: 40%;
+    background-position: 0 100%;
+  }
+}
+#defina-sincronize {
+  margin-top: 100px;
+  h1 {
+    color: #4d2f96;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  p {
+    color: #707070;
+    font-size: 24px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .app-cellphone {
+    position: absolute;
+  }
+  .tilt-content {
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    padding: 40px;
+    transform-style: preserve-3d;
+  }
+
+  .tilt-content .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../images/sincronizar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+#chart {
+  margin-bottom: 100px;
+  .img-bubble {
+    width: 100%;
+  }
+  .bubble-woman {
+    background-image: url(../images/woman-draw.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+  }
+
+  h2 {
+    color: #4d2f96;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  p {
+    color: #707070;
+    font-size: 24px;
+  }
+}
+
+#recompensas {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  .img-bubble {
+    width: 100%;
+  }
+  .bubble-men {
+    background-image: url(../images/men-draw.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+  }
+
+  h2 {
+    color: #4d2f96;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  p {
+    color: #707070;
+    font-size: 24px;
+  }
+}
+
+#faq{
+  background-color: #F9F9F9;
+  padding: 100px 0;
+}
+
+#canais-atendimento {
+  padding: 100px 0;
+  .title {
+    color: #a467a1;
+    font-size: 24px;
+    border-left: 5px solid #a467a1;
+    padding: 10px 15px;
+    font-weight: 400;
+    margin-top: 15%;
+  }
+  .canal {
+    h4 {
+      color: #707070;
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+      color: #707070;
+    }
+  }
+
+  .btn-pink {
+    background-color: #dba7d9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 35px;
+  }
+
+  .btn-purple {
+    background-color: #7866d0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 35px;
+  }
+
+  .btn-email {
+    color: #4d2f96;
+    font-weight: bold;
+    padding: 0;
+  }
+}
+
+#footer {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #7866d0;
+  h6,
+  p {
+    color: #fff;
+  }
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      margin: 10px;
+    }
+  }
+}
